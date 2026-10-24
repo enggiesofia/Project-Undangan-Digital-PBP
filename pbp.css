@@ -1,0 +1,384 @@
+:root {
+  --maroon: #650F2D;
+  --rose: #C6A078;
+  --rose-dark: #98704F;
+  --blush: #F3E6E4;
+  --paper: #F8F0E8;
+  --ink: #38232B;
+  --navy: #4A1025;
+  --gold: #D1AE7B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: var(--ink);
+  background: var(--paper);
+  padding-bottom: 72px;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+.display-font {
+  font-family: 'Italiana', serif;
+  letter-spacing: .04em;
+}
+
+.serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.text-rose {
+  color: var(--rose) !important;
+}
+
+.tracking {
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+/* Tombol */
+.btn-rose {
+  background: var(--rose);
+  border: 1px solid var(--rose);
+  color: #fff;
+}
+
+.btn-rose:hover {
+  background: var(--rose-dark);
+  border-color: var(--rose-dark);
+  color: #fff;
+}
+
+.btn-line {
+  border: 1px solid var(--rose);
+  color: var(--rose-dark);
+  background: transparent;
+}
+
+.btn-line:hover {
+  background: var(--rose);
+  color: #fff;
+}
+
+/* Cover & hero */
+#cover,
+#hero {
+  min-height: 100vh;
+  background-color: var(--navy);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+#cover {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100vh;
+  transition: transform 1s ease-in-out,
+              opacity 1s ease-in-out,
+              visibility 1s ease-in-out;
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(40, 5, 19, 0.68),
+      rgba(74, 16, 37, 0.48),
+      rgba(40, 5, 19, 0.76)
+    ),
+    url('awalan.jpg');
+}
+
+#cover.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#hero {
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(40, 5, 19, 0.55),
+      rgba(74, 16, 37, 0.35),
+      rgba(40, 5, 19, 0.68)
+    ),
+    url('awalan.jpg');
+}
+
+.frame {
+  padding: 48px 28px;
+  max-width: 460px;
+  margin: 0 auto;
+  position: relative;
+  background: transparent;
+}
+
+.guest {
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  padding: 14px 0;
+}
+
+/* Countdown */
+.cd {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cd div {
+  width: 74px;
+  padding: 12px 0;
+  border: 1px solid rgba(201, 151, 127, .6);
+  border-radius: 50px 50px 8px 8px;
+  background: rgba(255, 255, 255, .06);
+}
+
+.cd b {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.cd small {
+  font-size: .62rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+/* Section */
+.section {
+  padding: 84px 0;
+}
+
+.bg-blush {
+  background: var(--blush);
+}
+
+.bg-navy {
+  background: var(--navy);
+  color: #fff;
+}
+
+.title {
+  font-family: 'Italiana', serif;
+  font-size: 2.6rem;
+}
+
+.divider {
+  width: 70px;
+  height: 1px;
+  background: var(--rose);
+  margin: 14px auto 28px;
+  position: relative;
+}
+
+.divider::after {
+  content: "\2665";
+  position: absolute;
+  left: 50%;
+  top: -11px;
+  transform: translateX(-50%);
+  background: inherit;
+  color: var(--rose);
+  padding: 0 8px;
+  font-size: .8rem;
+}
+
+.bg-blush .divider::after {
+  background: var(--blush);
+}
+
+.section:not(.bg-blush):not(.bg-burgundy) .divider::after {
+  background: var(--paper);
+}
+
+.arch {
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 115px 115px 12px 12px;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 28px rgba(20, 33, 61, .18);
+}
+
+/* Kartu */
+.card-soft {
+  background: #fff;
+  border-radius: 18px;
+  padding: 34px 24px;
+  box-shadow: 0 8px 28px rgba(20, 33, 61, .08);
+  height: 100%;
+}
+
+.card-dark {
+  border: 1px solid rgba(201, 151, 127, .55);
+  border-radius: 18px;
+  padding: 34px 24px;
+  height: 100%;
+  background: rgba(255, 255, 255, .04);
+}
+
+.swatch {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+/* Galeri */
+.g-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: zoom-in;
+  transition: transform .4s ease;
+}
+
+.g-img:hover {
+  transform: translateY(-4px);
+}
+
+/* Form */
+.form-box {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 28px rgba(20, 33, 61, .08);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 .2rem rgba(201, 151, 127, .25);
+}
+
+.wishes {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.wish {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-left: 3px solid var(--rose);
+}
+
+footer {
+  background: var(--navy);
+  color: #fff;
+}
+
+/* Nav bawah */
+#bottomNav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1500;
+  display: none;
+  justify-content: space-around;
+  background: rgba(55, 5, 23, 0.97);
+  padding: 8px 0;
+  backdrop-filter: blur(8px);
+}
+
+#bottomNav.show {
+  display: flex;
+}
+
+#bottomNav a {
+  color: #e7d3c8;
+  text-decoration: none;
+  font-size: .62rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bottomNav a i {
+  font-size: 1.15rem;
+}
+
+#bottomNav a:hover {
+  color: var(--rose);
+}
+
+/* Musik */
+#musicBtn {
+  position: fixed;
+  right: 14px;
+  bottom: 82px;
+  z-index: 1600;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--rose);
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .3);
+  display: none;
+}
+
+#musicBtn.show {
+  display: block;
+}
+
+#musicBtn.playing i {
+  display: inline-block;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .9s ease, transform .9s ease;
+}
+
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+
+  .frame {
+    padding: 40px 18px;
+    margin: 0 14px;
+  }
+
+  .cd div {
+    width: 64px;
+  }
+}

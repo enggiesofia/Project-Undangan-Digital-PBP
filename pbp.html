@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Undangan Pernikahan Rasya &amp; Sofia</title>
+  <meta name="description" content="Kami mengundang Anda untuk hadir di hari bahagia kami."/>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Italiana&family=Montserrat:wght@300;400;500&display=swap"rel="stylesheet"/>
+  <link rel="stylesheet" href="pbp.css" />
+</head>
+
+  <body class="locked">
+    <section id="cover" class="d-flex align-items-center justify-content-center text-center">
+      <div class="frame">
+        <p class="tracking mb-3">Undangan Pernikahan</p>
+        <h1 class="display-font display-4 mb-2" data-names> Rasya &amp; Sofia</h1>
+        <p class="mb-4" data-date-long></p>
+
+        <div class="guest mb-4">
+          <p class="small mb-1 opacity-75">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+          <h4 class="serif mb-0" id="guestName">Tamu Undangan</h4>
+        </div>
+
+        <button id="openBtn" class="btn btn-rose rounded-pill px-4 py-2">
+          <i class="bi bi-envelope-heart me-2"></i>Buka Undangan
+        </button>
+      </div>
+    </section>
+
+    <audio id="bgm" loop>
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+    <button id="musicBtn" aria-label="Putar atau jeda musik">
+      <i class="bi bi-music-note-beamed"></i>
+    </button>
+
+    <nav id="bottomNav">
+      <a href="#hero"><i class="bi bi-house-heart"></i>Beranda</a>
+      <a href="#mempelai"><i class="bi bi-people"></i>Mempelai</a>
+      <a href="#acara"><i class="bi bi-calendar-heart"></i>Acara</a>
+      <a href="#galeri"><i class="bi bi-images"></i>Galeri</a>
+      <a href="#ucapan"><i class="bi bi-chat-heart"></i>Ucapan</a>
+    </nav>
+
+    <main id="main" class="d-none">
+      <section id="hero" class="d-flex align-items-center justify-content-center text-center">
+        <div class="px-3 reveal">
+          <p class="tracking mb-3">Kami Akan Melangsungkan Pernikahan</p>
+          <h1 class="display-font display-3 mb-2"> Rasya Firmansyah &amp; Enggie Sofia</h1>
+          <p class="serif fs-4 fst-italic mb-4" data-date-long></p>
+          <div class="cd" id="countdown">
+            <div><b id="d">0</b><small>Hari</small></div>
+            <div><b id="h">0</b><small>Jam</small></div>
+            <div><b id="m">0</b><small>Menit</small></div>
+            <div><b id="s">0</b><small>Detik</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section text-center">
+        <div class="container reveal" style="max-width: 680px">
+          <i class="bi bi-flower1 text-rose fs-2"></i>
+          <p class="fs-2 mt-3 mb-3" lang="ar" dir="rtl">
+            وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ ۝٢١
+          </p>
+          <p class="serif fs-5 fst-italic">
+            Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan
+            pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu
+            merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta
+            dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar
+            terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+          </p>
+          <p class="tracking">QS. Ar-Rum : 21</p>
+        </div>
+      </section>
+
+      <section id="mempelai" class="section bg-blush text-center">
+        <div class="container">
+          <h2 class="title reveal">Mempelai</h2>
+          <div class="divider"></div>
+          <p class="reveal mb-5 mx-auto" style="max-width: 560px">
+            Tanpa mengurangi rasa hormat, kami mengundang
+            Bapak/Ibu/Saudara/i pada pernikahan kami:
+          </p>
+          <div class="row g-5 justify-content-center">
+            <div class="col-md-5 reveal">
+              <img class="arch" src="gambar1.jpg" alt="Rasya Firmansyah" />
+              <h3 class="display-font mt-4 mb-1">Rasya Firmansyah</h3>
+              <p class="small text-muted mb-1">Putra dari</p>
+              <p class="mb-2">Bapak Hendra Putra &amp; Ibu Dita</p>
+            </div>
+            <div class="col-md-5 reveal">
+              <img class="arch" src="gambar2.jpg" alt="Enggie Sofia" />
+              <h3 class="display-font mt-4 mb-1">Enggie Sofia</h3>
+              <p class="small text-muted mb-1">Putri dari</p>
+              <p class="mb-2">Bapak Irvan Sanjaya &amp; Ibu Anisa</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="acara" class="section bg-navy text-center">
+        <div class="container">
+          <h2 class="title reveal">Waktu &amp; Tempat</h2>
+          <div class="divider"></div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-5 reveal">
+              <div class="card-dark">
+                <i class="bi bi-gem fs-1 text-rose"></i>
+                <h4 class="serif fs-3 mt-2">Akad Nikah</h4>
+                <p class="mb-1" data-date-long></p>
+                <p class="mb-1">
+                  <i class="bi bi-clock me-2"></i>08.00 - 09.00 WIB
+                </p>
+                <p class="mb-0">
+                  <i class="bi bi-geo-alt me-2"></i>Hotel The Langham<br />District 8, SCBD, Jakarta Selatan
+                </p>
+              </div>
+            </div>
+            <div class="col-md-5 reveal">
+              <div class="card-dark">
+                <i class="bi bi-stars fs-1 text-rose"></i>
+                <h4 class="serif fs-3 mt-2">Resepsi</h4>
+                <p class="mb-1" data-date-long></p>
+                <p class="mb-1">
+                  <i class="bi bi-clock me-2"></i>18.00 - 20.30 WIB
+                </p>
+                <p class="mb-0">
+                  <i class="bi bi-geo-alt me-2"></i>Hotel The Langham<br />District 8, SCBD, Jakarta Selatan
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal mt-4">
+            <p class="mb-2 tracking">Dress Code</p>
+            <span class="swatch" style="background: #862245"></span>
+            <span class="swatch" style="background: #c9977f"></span>
+            <span class="swatch" style="background: #f6ece6"></span>
+          </div>
+
+          <div class="reveal mt-4 d-flex flex-wrap gap-2 justify-content-center">
+            <a
+              id="calBtn"
+              href="#"
+              target="_blank"
+              class="btn btn-rose rounded-pill"
+            >
+              <i class="bi bi-calendar-plus me-2"></i>Simpan ke Kalender
+            </a>
+            <a
+              href="https://maps.google.com/?q=The+Langham+Jakarta"
+              target="_blank"
+              class="btn btn-line rounded-pill"
+              style="color: #e7d3c8"
+            >
+              <i class="bi bi-map me-2"></i>Buka Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeri" class="section text-center">
+        <div class="container">
+          <h2 class="title reveal">Galeri</h2>
+          <div class="divider"></div>
+          <div class="row g-2 g-md-3" id="gallery">
+            <div class="col-6 col-md-3 reveal">
+              <img class="g-img" src="galeri1.jpeg" alt="Foto 1" />
+            </div>
+            <div class="col-6 col-md-3 reveal">
+              <img class="g-img" src="galeri2.jpg" alt="Foto 2" />
+            </div>
+            <div class="col-6 col-md-3 reveal">
+              <img class="g-img" src="galeri3.jpg" alt="Foto 3" />
+            </div>
+            <div class="col-6 col-md-3 reveal">
+              <img class="g-img" src="galeri4.jpg" alt="Foto 4" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-blush text-center">
+        <div class="container" style="max-width: 620px">
+          <h2 class="title reveal">Tanda Kasih</h2>
+          <div class="divider"></div>
+          <p class="reveal">
+            Kehadiran dan doa Anda sudah menjadi hadiah terindah. Bila ingin
+            berbagi kebahagiaan, dapat melalui:
+          </p>
+
+          <div class="card-soft reveal mt-4">
+            <h5 class="serif fs-4">Bank BCA</h5>
+            <p class="fs-4 mb-0" id="rek1">25673091784</p>
+            <p class="small text-muted">a.n. Rasya Firmansyah</p>
+            <button class="btn btn-line btn-sm rounded-pill" data-copy="rek1">
+              <i class="bi bi-copy me-1"></i>Salin Nomor
+            </button>
+          </div>
+          <div class="card-soft reveal mt-3">
+            <h5 class="serif fs-4">Bank BNI</h5>
+            <p class="fs-4 mb-0" id="rek2">0987654321</p>
+            <p class="small text-muted">a.n. Enggie Sofia</p>
+            <button class="btn btn-line btn-sm rounded-pill" data-copy="rek2">
+              <i class="bi bi-copy me-1"></i>Salin Nomor
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="ucapan" class="section">
+        <div class="container" style="max-width: 680px">
+          <h2 class="title text-center reveal">Konfirmasi &amp; Ucapan</h2>
+          <div class="divider"></div>
+
+          <form id="rsvp" class="form-box reveal" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="nama">Nama</label>
+              <input class="form-control" id="nama" type="text" />
+            </div>
+            <div class="row">
+              <div class="col-sm-8 mb-3">
+                <label class="form-label" for="hadir">Kehadiran</label>
+                <select class="form-select" id="hadir">
+                  <option value="">-- Pilih --</option>
+                  <option>Hadir</option>
+                  <option>Tidak Hadir</option>
+                </select>
+              </div>
+              <div class="col-sm-4 mb-3">
+                <label class="form-label" for="jumlah">Jumlah</label>
+                <select class="form-select" id="jumlah">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="pesan">Ucapan &amp; Doa</label>
+              <textarea class="form-control" id="pesan" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-rose rounded-pill" type="submit">
+                <i class="bi bi-send me-2"></i>Kirim Ucapan
+              </button>
+            </div>
+          </form>
+
+          <h5 class="serif fs-3 text-center mt-5 mb-3">Ucapan Tamu</h5>
+          <div class="wishes" id="wishes"></div>
+        </div>
+      </section>
+
+      <footer class="text-center py-5 px-3">
+        <p class="mb-1">
+          Suatu kehormatan dan kebahagiaan bagi kami apabila
+          Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+        </p>
+        <p class="mb-3">Terima kasih.</p>
+        <h3 class="display-font display-6 mb-3" data-names>
+          Rasya &amp; Sofia
+        </h3>
+        <p class="small opacity-75 mb-0">
+          Dibuat dengan <i class="bi bi-heart-fill text-rose"></i>
+        </p>
+      </footer>
+    </main>
+
+    <script src="style.js"></script>
+  </body>
+</html>
